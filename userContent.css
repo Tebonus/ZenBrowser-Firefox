@@ -1,0 +1,60 @@
+@-moz-document url("about:newtab") {
+body {
+    background-color: #e01010 ;
+   /* background-image: -webkit-linear-gradient(top, #221e27, #250c70) !important; /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+    background-image:         linear-gradient(  #221e27 0%, #1c1129 70%, #250c70 100%) !important; /* c76d32 ladny kolor */
+  }
+  
+
+    /* Target the element with class 'wordmark' */
+    .wordmark {
+      visibility: hidden !important; /* Hide the original text */
+      position: relative;
+    }
+  
+    /* Add custom text using the ::before pseudo-element */
+    .wordmark::before {
+      content: "Search." !important; /* Replace 'Search.' with any text you want */
+      visibility: visible;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #ffffff; /* Change the text color */
+      font-size: 100px; /* Adjust the font size */
+      font-family: "Georgia", serif !important;
+      font-style: italic;
+      font-weight: bold;
+    }
+    .logo {
+      display: none !important;
+    }
+ 
+
+      /* Hide the image logo inside the button */
+
+      .search-handoff-button {
+        
+        /*background-image: none !important; /* Hides the image logo */
+        background-color: #221e27 !important;
+        border: 5px solid !important;
+        border-color: #18151c !important; 
+        border-radius: 32px !important;
+
+        
+      }
+    
+    
+      
+ 
+      .fake-textbox {
+        font-style: italic;
+        font-weight: bold;
+        font-size: 16px !important;
+        opacity: 1 !important;
+        color: #665a74 !important;
+      }
+     
+    
+    
+}
