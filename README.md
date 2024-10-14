@@ -1,1 +1,1 @@
-My personal css for firefox on thr Zen browser.
+My personal css for firefox on the Zen browser.
